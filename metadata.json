@@ -1,0 +1,6 @@
+{
+  "name": "MOD FORGE Enterprise Browser",
+  "description": "MOD FORGE PRIVATE LTD - Secure enterprise web browser with integrated activity tracking, DLP, and centralized management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
