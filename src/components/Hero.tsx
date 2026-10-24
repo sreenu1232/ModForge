@@ -21,15 +21,22 @@ export function Hero({ onOpenPilotModal, onOpenBrochureModal, onScrollToSandbox 
       />
 
       <div className="relative mx-auto max-w-7xl px-6">
-        {/* Unboxed Metadata Kicker (Zero-Pill Rule) */}
-        <div className="flex flex-wrap items-center gap-2 text-xs font-medium text-slate-400 mb-6 tracking-wide">
-          <span className="text-cyan-400 font-semibold">{COMPANY_PROFILE.name}</span>
-          <span aria-hidden="true" className="text-slate-600">·</span>
-          <span>ESTABLISHED 1988</span>
-          <span aria-hidden="true" className="text-slate-600">·</span>
-          <span>TS 16949 & ISO 9001-2000 ACCREDITED</span>
-          <span aria-hidden="true" className="text-slate-600">·</span>
-          <span>CHENNAI, INDIA</span>
+        {/* Company Logo and Accreditation Header */}
+        <div className="flex flex-wrap items-center gap-4 mb-6">
+          <div className="bg-white px-3 py-1.5 rounded-lg border border-slate-700/60 shadow-md inline-flex items-center">
+            <img
+              src={COMPANY_PROFILE.logoPath}
+              alt="MOD FORGE PRIVATE LIMITED"
+              className="h-6 sm:h-7 w-auto object-contain"
+            />
+          </div>
+          <div className="flex flex-wrap items-center gap-2 text-xs font-medium text-slate-400 font-mono">
+            <span className="text-cyan-400 font-semibold">EST. 1988</span>
+            <span aria-hidden="true" className="text-slate-600">·</span>
+            <span>TS 16949 & ISO 9001-2000 ACCREDITED</span>
+            <span aria-hidden="true" className="text-slate-600">·</span>
+            <span>AMBATTUR, CHENNAI</span>
+          </div>
         </div>
 
         {/* Hero Headline & Subtitle */}

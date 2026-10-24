@@ -21,6 +21,13 @@ export function ContactSection() {
           {/* Office Details & Brochure Guarantees */}
           <div className="lg:col-span-7 space-y-6">
             <div>
+              <div className="bg-white px-3 py-1.5 rounded-lg border border-slate-700/60 shadow-sm inline-flex items-center mb-4">
+                <img
+                  src={COMPANY_PROFILE.logoPath}
+                  alt="MOD FORGE PRIVATE LIMITED"
+                  className="h-6 w-auto object-contain"
+                />
+              </div>
               <div className="text-xs font-semibold text-cyan-400 uppercase tracking-wider mb-2">
                 Central Marketing & Engineering Office
               </div>

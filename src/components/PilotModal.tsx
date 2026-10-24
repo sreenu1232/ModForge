@@ -64,13 +64,22 @@ export function PilotModal({ isOpen, onClose, prefillConfig }: PilotModalProps) 
       >
         {/* Header */}
         <div className="flex items-center justify-between border-b border-slate-800 px-6 py-4 bg-slate-950">
-          <div>
-            <h3 id="pilot-modal-title" className="text-base font-bold text-white">
-              Request 30-Day Enterprise Pilot
-            </h3>
-            <p className="text-xs text-slate-400">
-              MOD FORGE PRIVATE LTD · Engineering Security Division
-            </p>
+          <div className="flex items-center gap-3">
+            <div className="bg-white px-2 py-1 rounded border border-slate-700/60 shadow-sm flex items-center h-8">
+              <img
+                src={COMPANY_PROFILE.logoPath}
+                alt="MOD FORGE PRIVATE LIMITED"
+                className="h-5 w-auto object-contain"
+              />
+            </div>
+            <div>
+              <h3 id="pilot-modal-title" className="text-base font-bold text-white">
+                Request 30-Day Enterprise Pilot
+              </h3>
+              <p className="text-xs text-slate-400">
+                MOD FORGE PRIVATE LTD · Engineering Security Division
+              </p>
+            </div>
           </div>
           <button
             type="button"

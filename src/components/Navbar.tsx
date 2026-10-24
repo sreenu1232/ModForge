@@ -1,3 +1,5 @@
+import { COMPANY_PROFILE } from "../data/brochureData";
+
 interface NavbarProps {
   onOpenPilotModal: () => void;
   onOpenBrochureModal: () => void;
@@ -6,16 +8,22 @@ interface NavbarProps {
 export function Navbar({ onOpenPilotModal, onOpenBrochureModal }: NavbarProps) {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-8 px-6 py-4">
-        {/* Zone 1: Single text element wordmark */}
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-8 px-6 py-3.5">
+        {/* Zone 1: Brand logo and title */}
         <a
           href="/"
-          className="flex items-center gap-2.5 text-lg font-bold tracking-tight text-white whitespace-nowrap shrink-0 hover:text-cyan-400 transition-colors"
+          className="flex items-center gap-3 whitespace-nowrap shrink-0 group transition-opacity hover:opacity-95"
         >
-          <span className="flex h-7 w-7 items-center justify-center rounded bg-gradient-to-br from-cyan-500 to-blue-600 text-xs font-black text-slate-950">
-            MF
+          <div className="bg-white px-2.5 py-1 rounded-md border border-slate-700/60 shadow-sm flex items-center h-8 sm:h-9">
+            <img
+              src={COMPANY_PROFILE.logoPath}
+              alt="MOD FORGE PRIVATE LIMITED"
+              className="h-5 sm:h-5.5 w-auto object-contain"
+            />
+          </div>
+          <span className="hidden sm:inline-block text-xs font-semibold uppercase tracking-wider text-cyan-400 border-l border-slate-800 pl-3">
+            Enterprise Browser
           </span>
-          <span>MOD FORGE</span>
         </a>
 
         {/* Zone 2: 4–5 clean single-line text navigation links */}

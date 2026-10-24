@@ -52,9 +52,13 @@ export function BrochureModal({ isOpen, onClose }: BrochureModalProps) {
         {/* Header */}
         <div className="flex items-center justify-between border-b border-slate-800 px-6 py-4 bg-slate-950">
           <div className="flex items-center gap-3">
-            <span className="flex h-8 w-8 items-center justify-center rounded bg-gradient-to-br from-cyan-500 to-blue-600 text-xs font-black text-slate-950">
-              MF
-            </span>
+            <div className="bg-white px-2.5 py-1 rounded border border-slate-700/60 shadow-sm flex items-center h-8">
+              <img
+                src={COMPANY_PROFILE.logoPath}
+                alt="MOD FORGE PRIVATE LIMITED"
+                className="h-5 w-auto object-contain"
+              />
+            </div>
             <div>
               <h3 id="modal-brochure-title" className="text-base font-bold text-white">
                 MOD FORGE PRIVATE LTD · Corporate Profile Brochure

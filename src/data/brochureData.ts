@@ -16,6 +16,7 @@ export const COMPANY_PROFILE = {
   email: "chennai@mod-forge.com",
   website: "www.mod-forge.com",
   brochurePdfPath: "/assets/aistudio/MF-Brochure_-_mod_forge_profile_bfde509e.pdf",
+  logoPath: "/assets/aistudio/image_908f204f.png",
 };
 
 export const INDUSTRIAL_CAPABILITIES = [

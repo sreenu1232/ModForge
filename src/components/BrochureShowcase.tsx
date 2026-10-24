@@ -54,12 +54,19 @@ export function BrochureShowcase({ onOpenBrochureModal, onOpenPilotModal }: Broc
         {/* Industrial Foundation Story Card */}
         <div className="rounded-xl border border-slate-800 bg-slate-900/90 p-6 lg:p-8 mb-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           <div className="lg:col-span-7 space-y-4">
-            <div className="flex flex-wrap items-center gap-2 text-xs text-slate-400 font-mono">
-              <span className="text-cyan-400 font-semibold">ABOUT MOD FORGE PRIVATE LTD</span>
-              <span aria-hidden="true" className="text-slate-600">·</span>
-              <span>CHENNAI MANUFACTURING HUB</span>
-              <span aria-hidden="true" className="text-slate-600">·</span>
-              <span>1988 - 2026</span>
+            <div className="flex flex-wrap items-center gap-3">
+              <div className="bg-white px-2.5 py-1 rounded border border-slate-700/60 shadow-sm inline-flex items-center">
+                <img
+                  src={COMPANY_PROFILE.logoPath}
+                  alt="MOD FORGE PRIVATE LIMITED"
+                  className="h-5 sm:h-5.5 w-auto object-contain"
+                />
+              </div>
+              <div className="flex items-center gap-2 text-xs text-slate-400 font-mono">
+                <span className="text-cyan-400 font-semibold">1988 - 2026</span>
+                <span aria-hidden="true" className="text-slate-600">·</span>
+                <span>CHENNAI MANUFACTURING HUB</span>
+              </div>
             </div>
 
             <h3 className="text-xl sm:text-2xl font-bold text-white">

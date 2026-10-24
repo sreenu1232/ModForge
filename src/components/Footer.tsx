@@ -13,11 +13,17 @@ export function Footer({ onOpenBrochureModal, onOpenPilotModal }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-slate-900">
           {/* Brand Info */}
           <div className="md:col-span-2 space-y-3">
-            <div className="flex items-center gap-2 text-white font-bold text-sm tracking-tight">
-              <span className="flex h-6 w-6 items-center justify-center rounded bg-gradient-to-br from-cyan-500 to-blue-600 text-[10px] font-black text-slate-950">
-                MF
+            <div className="flex items-center gap-3">
+              <div className="bg-white px-2.5 py-1 rounded border border-slate-700/60 shadow-sm flex items-center h-8">
+                <img
+                  src={COMPANY_PROFILE.logoPath}
+                  alt="MOD FORGE PRIVATE LIMITED"
+                  className="h-5 w-auto object-contain"
+                />
+              </div>
+              <span className="text-cyan-400 font-semibold text-xs uppercase tracking-wider">
+                Enterprise Browser
               </span>
-              <span>MOD FORGE PRIVATE LTD</span>
             </div>
             <p className="text-slate-400 text-xs max-w-md leading-relaxed">
               Industrial-grade enterprise web browsing and activity governance platform. Protecting proprietary CAD designs, metallurgy data, and corporate networks since 1988.
